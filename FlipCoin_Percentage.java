@@ -1,14 +1,13 @@
 package com.BridgeLabz.basics;
 
-import java.util.Scanner;
+import com.BridgeLabz.util.UtilClass;
 
 public class FlipCoin_Percentage {
 
 	
 		public static void main(String[] args) {
-			Scanner sc1=new Scanner(System.in);
-			System.out.println("Enter the no of times the coin to be flipped??");
-			int flips=sc1.nextInt();
+			System.out.println("Enter the number of flips to be done?");
+			int flips=UtilClass.IntInput();
 			int heads=0;
 			int tails=0;
 			int count=0;
@@ -27,7 +26,7 @@ public class FlipCoin_Percentage {
 				}
 				count++;
 			}
-			 percentageHeads=(double)heads/tails*100;
+			 percentageHeads=(double)heads/flips*100;
 			 percentageTails=(double)tails/flips*100;
 			 
 			 System.out.println("percentage number of heads "+percentageHeads);
