@@ -5,6 +5,7 @@ import com.BridgeLabz.util.UtilClass;
 public class LeapYearProgram {
 
 	public static void main(String[] args) {
+		System.out.println("enter year");
 		String y=UtilClass.StringInput();
 		if(y.length()==4)
 		{
